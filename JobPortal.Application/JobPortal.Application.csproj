@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="Google.Apis.Calendar.v3" Version="1.68.0.3473" />
+    <PackageReference Include="MediatR" Version="12.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.7" />
+	  <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.1" />
+	  <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+	  <PackageReference Include="StackExchange.Redis" Version="2.8.0" />
+	  <PackageReference Include="Stripe.net" Version="45.4.0" />
+	  <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.6.2" />
+	  <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JobPortal.Common\JobPortal.Common.csproj" />
+    <ProjectReference Include="..\JobPortal.Domain\JobPortal.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Features\Photos\" />
+    <None Remove="Features\Photos\Commands\" />
+    <None Remove="Features\Photos\Dtos\" />
+    <None Remove="Features\Photos\Queries\" />
+    <None Remove="Features\Photos\Commands\DeletePhoto\" />
+    <None Remove="Features\Photos\Commands\UploadPhoto\" />
+    <None Remove="Features\Photos\Queries\GetPhoto\" />
+    <None Remove="Features\JobPostings\Commands\CreateJobPosting\Validator\" />
+    <None Remove="Features\Educations\Commands\CreateEducation\Validator\" />
+    <None Remove="Features\Ratings\Commands\CreateRating\Validator\" />
+    <None Remove="Features\Reviews\Commands\CreateReview\Validator\" />
+    <None Remove="Features\Skills\Commands\CreateSkill\Validator\" />
+    <None Remove="Features\WorkExperiences\Commands\CreateWorkExperience\Validator\" />
+    <None Remove="Features\JobPostings\Commands\SearchJobPosting\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Features\Ratings\Dtos\" />
+    <Folder Include="Features\Photos\" />
+    <Folder Include="Features\Photos\Commands\" />
+    <Folder Include="Features\Photos\Dtos\" />
+    <Folder Include="Features\Photos\Queries\" />
+    <Folder Include="Features\Photos\Commands\DeletePhoto\" />
+    <Folder Include="Features\Photos\Commands\UploadPhoto\" />
+    <Folder Include="Features\Photos\Queries\GetPhoto\" />
+    <Folder Include="Features\JobPostings\Commands\CreateJobPosting\Validator\" />
+    <Folder Include="Features\Educations\Commands\CreateEducation\Validator\" />
+    <Folder Include="Features\Ratings\Commands\CreateRating\Validator\" />
+    <Folder Include="Features\Reviews\Commands\CreateReview\Validator\" />
+    <Folder Include="Features\Skills\Commands\CreateSkill\Validator\" />
+    <Folder Include="Features\WorkExperiences\Commands\CreateWorkExperience\Validator\" />
+    <Folder Include="Features\JobPostings\Commands\SearchJobPosting\" />
+  </ItemGroup>
+</Project>

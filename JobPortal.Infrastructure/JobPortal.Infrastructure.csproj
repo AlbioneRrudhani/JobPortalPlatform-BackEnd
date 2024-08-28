@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\PC\.nuget\packages\microsoft.net.compilers\1.0.0\build\..\tools\**" />
+    <None Remove="Search\" />
+  </ItemGroup>
+
+
+
+
+	<ItemGroup>
+		<PackageReference Include="Azure.Storage.Blobs" Version="12.21.0" />
+		<PackageReference Include="Google.Apis" Version="1.68.0" />
+		<PackageReference Include="Google.Apis.Calendar.v3" Version="1.68.0.3473" />
+		<PackageReference Include="Google.Apis.Oauth2.v2" Version="1.68.0.1869" />
+		<PackageReference Include="Mailjet.Api" Version="3.0.0" />
+		<PackageReference Include="MassTransit" Version="8.2.3" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.7" />
+		<PackageReference Include="Microsoft.AspNetCore.SignalR.Common" Version="8.0.7" />
+		<PackageReference Include="Microsoft.AspNetCore.SignalR.Protocols.Json" Version="8.0.7" />
+		<PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.1" />
+		<PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="8.0.7" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="RabbitMQ.Client" Version="6.8.1" />
+		<PackageReference Include="StackExchange.Redis" Version="2.8.0" />
+		<PackageReference Include="Stripe.net" Version="45.4.0" />
+		<PackageReference Include="Elastic.Clients.Elasticsearch" Version="8.14.7" />
+	</ItemGroup>
+
+	
+	<ItemGroup>
+    <ProjectReference Include="..\JobPortal.Application\JobPortal.Application.csproj" />
+  </ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Search\" />
+	</ItemGroup>
+</Project>
